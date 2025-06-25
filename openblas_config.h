@@ -24,7 +24,7 @@
 #define OPENBLAS_ZLOCAL_BUFFER_SIZE 8192
 #define OPENBLAS_USE64BITINT 
 #define OPENBLAS_GEMM_MULTITHREAD_THRESHOLD 4
-#define OPENBLAS_VERSION " OpenBLAS 0.3.29 "
+#define OPENBLAS_VERSION " OpenBLAS 0.3.28 "
 /*This is only for "make install" target.*/
 
 #if defined(OPENBLAS_OS_WINNT) || defined(OPENBLAS_OS_CYGWIN_NT) || defined(OPENBLAS_OS_INTERIX)

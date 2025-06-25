@@ -67,14 +67,8 @@ extern "C" {
 #define lapack_logical    lapack_int
 #endif
 
-#if defined(_MSC_VER) && defined(__INTEL_CLANG_COMPILER)
-#define LAPACK_COMPLEX_STRUCTURE
-#define LAPACK_GLOBAL(lcname,UCNAME)  lcname
-#define NOCHANGE
-#endif
-
 #ifndef LAPACK_COMPLEX_CUSTOM
-#if defined(_MSC_VER) && !defined(__INTEL_CLANG_COMPILER)
+#if defined(_MSC_VER)
     #define _CRT_USE_C_COMPLEX_H
     #include <complex.h>
     #define LAPACK_COMPLEX_CUSTOM

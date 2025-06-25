@@ -22379,7 +22379,7 @@ lapack_int LAPACK_ztrtri_base(
 #endif
 
 #define LAPACK_ctrtrs_base LAPACK_GLOBAL(ctrtrs,CTRTRS)
-void LAPACK_ctrtrs_base(
+lapack_int LAPACK_ctrtrs_base(
     char const* uplo, char const* trans, char const* diag,
     lapack_int const* n, lapack_int const* nrhs,
     lapack_complex_float const* A, lapack_int const* lda,
@@ -22396,7 +22396,7 @@ void LAPACK_ctrtrs_base(
 #endif
 
 #define LAPACK_dtrtrs_base LAPACK_GLOBAL(dtrtrs,DTRTRS)
-void LAPACK_dtrtrs_base(
+lapack_int LAPACK_dtrtrs_base(
     char const* uplo, char const* trans, char const* diag,
     lapack_int const* n, lapack_int const* nrhs,
     double const* A, lapack_int const* lda,
@@ -22413,7 +22413,7 @@ void LAPACK_dtrtrs_base(
 #endif
 
 #define LAPACK_strtrs_base LAPACK_GLOBAL(strtrs,STRTRS)
-void LAPACK_strtrs_base(
+lapack_int LAPACK_strtrs_base(
     char const* uplo, char const* trans, char const* diag,
     lapack_int const* n, lapack_int const* nrhs,
     float const* A, lapack_int const* lda,
@@ -22430,7 +22430,7 @@ void LAPACK_strtrs_base(
 #endif
 
 #define LAPACK_ztrtrs_base LAPACK_GLOBAL(ztrtrs,ZTRTRS)
-void LAPACK_ztrtrs_base(
+lapack_int LAPACK_ztrtrs_base(
     char const* uplo, char const* trans, char const* diag,
     lapack_int const* n, lapack_int const* nrhs,
     lapack_complex_double const* A, lapack_int const* lda,
